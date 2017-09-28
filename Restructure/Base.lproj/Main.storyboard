@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,48 +22,74 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FIi-YT-EgK">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FIi-YT-EgK">
                                 <rect key="frame" x="16" y="28" width="343" height="548"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.070949583570947147" green="0.73164264896373055" blue="0.062504803663394504" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zrM-8h-gIM">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zrM-8h-gIM">
                                 <rect key="frame" x="16" y="576" width="171" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.73164264896373055" green="0.16076687860255276" blue="0.14120390912253705" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="wuX-b4-Mzl"/>
+                                </constraints>
                                 <state key="normal" title="Action one">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R4I-yS-MRJ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R4I-yS-MRJ">
                                 <rect key="frame" x="188" y="576" width="171" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.95136415155440412" green="0.63506512832076933" blue="0.2129498573384003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="3Xg-cS-Dfl"/>
+                                </constraints>
                                 <state key="normal" title="Action three">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ay-XV-np0">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ay-XV-np0">
                                 <rect key="frame" x="16" y="618" width="171" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.73164264899999998" green="0.1607668786" blue="0.1412039091" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.22198658902073354" green="0.20975962735340914" blue="0.73164264899999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="FNd-Lq-IIk"/>
+                                </constraints>
                                 <state key="normal" title="Action two">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gv8-vM-EDr">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gv8-vM-EDr">
                                 <rect key="frame" x="188" y="618" width="171" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.73164264899999998" green="0.1607668786" blue="0.1412039091" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.96496286081680527" green="0.97591483160621761" blue="0.055037042231870163" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="3LH-3J-KiJ"/>
+                                </constraints>
                                 <state key="normal" title="Action four">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="R4I-yS-MRJ" firstAttribute="width" secondItem="zrM-8h-gIM" secondAttribute="width" id="2vD-iS-uCq"/>
+                            <constraint firstItem="gv8-vM-EDr" firstAttribute="width" secondItem="zrM-8h-gIM" secondAttribute="width" id="4vT-rD-El5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="R4I-yS-MRJ" secondAttribute="trailing" id="9k8-Gp-zIq"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="zrM-8h-gIM" secondAttribute="leading" id="Ar3-82-9L8"/>
+                            <constraint firstItem="R4I-yS-MRJ" firstAttribute="leading" secondItem="zrM-8h-gIM" secondAttribute="trailing" constant="1" id="B0K-us-O5v"/>
+                            <constraint firstItem="gv8-vM-EDr" firstAttribute="leading" secondItem="3ay-XV-np0" secondAttribute="trailing" constant="1" id="DBW-YO-fg7"/>
+                            <constraint firstItem="zrM-8h-gIM" firstAttribute="top" secondItem="FIi-YT-EgK" secondAttribute="bottom" id="FCZ-1D-ITD"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3ay-XV-np0" secondAttribute="bottom" constant="8" id="Mqy-Y2-8sf"/>
+                            <constraint firstItem="FIi-YT-EgK" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="MzV-HA-svO"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="3ay-XV-np0" secondAttribute="leading" id="Pf9-k6-KT4"/>
+                            <constraint firstItem="3ay-XV-np0" firstAttribute="width" secondItem="zrM-8h-gIM" secondAttribute="width" id="Qtw-0W-EWG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gv8-vM-EDr" secondAttribute="trailing" id="W0V-Ea-2nd"/>
+                            <constraint firstItem="gv8-vM-EDr" firstAttribute="top" secondItem="R4I-yS-MRJ" secondAttribute="bottom" constant="1" id="fud-Wy-oFx"/>
+                            <constraint firstItem="3ay-XV-np0" firstAttribute="top" secondItem="zrM-8h-gIM" secondAttribute="bottom" constant="1" id="q0s-j9-c6u"/>
+                            <constraint firstItem="FIi-YT-EgK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="q5M-ve-ANC"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gv8-vM-EDr" secondAttribute="bottom" constant="8" id="sOf-1y-Q7a"/>
+                            <constraint firstItem="FIi-YT-EgK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="seS-V7-8NF"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
